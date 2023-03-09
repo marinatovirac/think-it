@@ -1,0 +1,57 @@
+.cardComponent {
+  width: 200px;
+  height: 200px;
+  border: 0px;
+  border-radius: 18px;
+  padding: 16px;
+  margin: 8px;
+  box-shadow: 0px 5px 4px #ccc;
+  background: #d5d5d5;
+  position: relative;
+}
+
+.cardComponent:focus {
+  outline: none;
+  background: #484848;
+  color: #fff;
+}
+
+.userPictureContainer {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background-color: bisque;
+}
+
+.userPictureContainer img {
+  width: 60%;
+  height: auto;
+  padding-top: 10px;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 40px;
+}
+
+.cardName {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cardInfo {
+  font-size: 12px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.label {
+  font-weight: bold;
+}

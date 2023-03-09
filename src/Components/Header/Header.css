@@ -1,0 +1,29 @@
+.headerComponent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 50px 20px 20px;
+  background: #484848;
+  color: #fff;
+}
+
+.pageTitle {
+  font-size: 24px;
+  font-style: bold;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+}
+
+.username {
+  margin-right: 10px;
+}
+
+.userIcon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: bisque;
+}
