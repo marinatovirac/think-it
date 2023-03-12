@@ -1,28 +1,24 @@
+@use '../../base/colors.scss';
+
 .navigationComponent {
-  background-color: #f0f0f0;
+  background-color: colors.$secondary;
   padding: 20px;
   width: 10%;
-}
-
-.navigationList {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.navigationItem {
-  margin-bottom: 10px;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.navigationItem:hover {
-  color: #fff;
-  background-color: #333;
-}
-
-@media (max-width: 768px) {
-  .navigationComponent {
+  .navigationList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    .navigationItem {
+      margin-bottom: 10px;
+      font-size: 20px;
+      cursor: pointer;
+      &:hover {
+        color: colors.$primary;
+        background-color: colors.$focus;
+      }
+    }
+  }
+  @media (max-width: 768px) {
     display: none;
   }
 }

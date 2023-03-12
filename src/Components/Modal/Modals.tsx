@@ -1,4 +1,5 @@
 import './Modals.scss';
+import '../../base/buttons.scss';
 
 const DeleteModal = ({
   setIsDeleteOpen,
@@ -34,7 +35,7 @@ const DeleteModal = ({
           <section className="modalActions">
             <section className="actionsContainer">
               <button
-                className="deleteBtn"
+                className="secondaryButton"
                 onClick={() => {
                   deletePost(selectedPost.id);
                   setIsDeleteOpen(false);
@@ -42,7 +43,7 @@ const DeleteModal = ({
               >
                 Delete
               </button>
-              <button className="cancelBtn" onClick={() => setIsDeleteOpen(false)}>
+              <button className="primaryButton" onClick={() => setIsDeleteOpen(false)}>
                 Cancel
               </button>
             </section>

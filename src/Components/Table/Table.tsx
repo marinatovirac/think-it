@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { DeleteModal, ViewModal } from '../Modal/Modals';
 
 import './Table.scss';
+import '../../base/buttons.scss';
 
 export const Table = ({ userId, activeName }: { userId: number; activeName: string }) => {
   const [posts, setPosts] = useState<Posts[]>([]);
@@ -37,7 +38,7 @@ export const Table = ({ userId, activeName }: { userId: number; activeName: stri
                 <td>{title}</td>
                 <td>
                   <button
-                    className="viewButton"
+                    className="primaryButton"
                     onClick={() => {
                       setIsViewOpen(true);
                       handleViewClick({ id, title, body });
@@ -46,7 +47,7 @@ export const Table = ({ userId, activeName }: { userId: number; activeName: stri
                     View
                   </button>
                   <button
-                    className="deleteButton"
+                    className="secondaryButton"
                     onClick={() => {
                       setIsDeleteOpen(true);
                       handleViewClick({ id });
