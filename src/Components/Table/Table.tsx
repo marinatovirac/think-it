@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { DeleteModal, ViewModal } from '../Modal/Modals';
 
-import './Table.css';
+import './Table.scss';
 
 export const Table = ({ userId, activeName }: { userId: number; activeName: string }) => {
   const [posts, setPosts] = useState<Posts[]>([]);

@@ -1,4 +1,4 @@
-import './Header.css';
+import './Header.scss';
 import person from '../../images/person.png';
 
 export const Header = ({ username, pageTitle }: { username: string; pageTitle: string }) => {

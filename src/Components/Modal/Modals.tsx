@@ -1,4 +1,4 @@
-import './Modals.css';
+import './Modals.scss';
 
 const DeleteModal = ({
   setIsDeleteOpen,
