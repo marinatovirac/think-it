@@ -17,21 +17,23 @@ export const Card = ({
   autoFocus: any;
 }) => {
   return (
-    <section>
+    <section data-testid="card">
       <button onClick={onClick} className="cardComponent" autoFocus={autoFocus}>
         <section className="userPictureContainer">
           <img src={person} alt="User" />
         </section>
         <section className="cardContent">
-          <section className="cardName">{name}</section>
+          <section className="cardName" data-testid="name">
+            {name}
+          </section>
           <section>
-            <section className="cardInfo">
+            <section className="cardInfo" data-testid="username">
               <span className="label">Username:</span> {username}
             </section>
-            <section className="cardInfo">
+            <section className="cardInfo" data-testid="email">
               <span className="label">Email:</span> {email}
             </section>
-            <section className="cardInfo">
+            <section className="cardInfo" data-testid="phone">
               <span className="label">Phone:</span> {phone}
             </section>
           </section>

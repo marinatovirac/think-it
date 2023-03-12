@@ -39,6 +39,7 @@ export const Table = ({ userId, activeName }: { userId: number; activeName: stri
                 <td>
                   <button
                     className="primaryButton"
+                    data-testid="viewButton"
                     onClick={() => {
                       setIsViewOpen(true);
                       handleViewClick({ id, title, body });
@@ -48,6 +49,7 @@ export const Table = ({ userId, activeName }: { userId: number; activeName: stri
                   </button>
                   <button
                     className="secondaryButton"
+                    data-testid="deleteButton"
                     onClick={() => {
                       setIsDeleteOpen(true);
                       handleViewClick({ id });

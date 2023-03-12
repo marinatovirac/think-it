@@ -26,12 +26,16 @@ const DeleteModal = ({
       <section className="centered">
         <section className="deleteModal">
           <section className="modalHeader">
-            <h5 className="heading">Delete</h5>
+            <h5 className="heading" data-testid="modalTitle">
+              Delete
+            </h5>
           </section>
           <button className="closeBtn" onClick={() => setIsDeleteOpen(false)}>
             X
           </button>
-          <section className="modalContent">Are you sure you want to delete the item?</section>
+          <section className="modalContent" data-testid="modalContent">
+            Are you sure you want to delete the item?
+          </section>
           <section className="modalActions">
             <section className="actionsContainer">
               <button
@@ -61,12 +65,16 @@ const ViewModal = ({ setIsViewOpen, selectedPost }: { setIsViewOpen: any; select
       <section className="centered">
         <section className="viewModal">
           <section className="modalHeader">
-            <h5 className="heading">{selectedPost.title}</h5>
+            <h5 className="heading" data-testid="modalTitle">
+              {selectedPost.title}
+            </h5>
           </section>
           <button className="closeBtn" onClick={() => setIsViewOpen(false)}>
             X
           </button>
-          <section className="modalContent">{selectedPost.body}</section>
+          <section className="modalContent" data-testid="modalContent">
+            {selectedPost.body}
+          </section>
         </section>
       </section>
     </section>
