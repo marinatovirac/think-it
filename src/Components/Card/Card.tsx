@@ -1,4 +1,4 @@
-import './Card.css';
+import './Card.scss';
 import person from '../../images/person.png';
 
 export const Card = ({

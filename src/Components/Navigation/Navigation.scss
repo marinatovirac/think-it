@@ -1,0 +1,24 @@
+@use '../../base/colors.scss';
+
+.navigationComponent {
+  background-color: colors.$secondary;
+  padding: 20px;
+  width: 10%;
+  .navigationList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    .navigationItem {
+      margin-bottom: 10px;
+      font-size: 20px;
+      cursor: pointer;
+      &:hover {
+        color: colors.$primary;
+        background-color: colors.$focus;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
